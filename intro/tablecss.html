@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table css</title>
+</head>
+<style>
+    body{
+        background-image: url(avanger.jpg);
+    }
+    table{
+        width: 100%;
+        height: 300px;
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+    thead{
+        /* background-color: aqua; */
+        text-align: center;
+        font-size: large;
+        font-weight: 700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    th{
+        padding: 15px;
+        background-color: aqua;
+    }
+    td{
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 18px;
+    }
+    tr:nth-child(odd){
+        background-color: antiquewhite;
+    }
+    tr:nth-child(even){
+        background-color: aquamarine;
+    }
+    tr:hover{
+        background-color: cadetblue;
+    }
+
+</style>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Marks</th>
+        </thead>
+        <tr>
+            <td>divy</td>
+            <td>101</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>jaynam sir</td>
+            <td>102</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>shrey sir </td>
+            <td>103</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>vedant</td>
+            <td>104</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>

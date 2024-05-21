@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>box shadow</title>
+</head>
+<style>
+    body{
+        background-color: cornflowerblue;
+    }
+    .heading{
+        color: white;
+        text-align: center;
+        text-shadow: 0px 10px 5px red , 10px 0px 5px green , -10px 0px 5px blue , 0px -10px 5px gold;
+    }
+    .heading:hover{
+        color: white;
+        text-align: center;
+        text-shadow: 0px 2px 5px red , 2px 0px 5px green , -2px 0px 5px blue , 0px -2px 5px gold;
+    }
+    .box1{
+        width: 250px;
+        height: 250px;
+        border: 5px solid black;
+        text-align: center;
+        padding: 30px;
+        margin-left: 50px;
+        background-image: url(car.jpg);
+        background-position: center;
+        background-size: cover;
+        text-shadow: 0px 0px 5px white;
+    }
+
+    .box1:hover{
+        background-color: thistle;
+        border-top-right-radius: 12%;
+        border-bottom-left-radius: 12%;
+    }
+
+    .box2{
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+        border: 5px dashed black;
+        padding: 20px;
+        margin-left: 50px;
+        text-align: center;
+        box-shadow: 0px -10px 15px red , 0px 10px 15px green ;
+    }
+
+    .box2:hover{
+        box-shadow: 20px -10px 15px red , -20px 10px 15px green;
+    }
+</style>
+<body>
+    <h1 class="heading">Introduction</h1>
+
+    <div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis consequuntur, ducimus in excepturi, quisquam dolor, minus corporis maxime labore culpa aperiam eveniet ipsam autem voluptatum quos cum commodi non sapiente.</div>
+
+    <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia error fugiat, vitae eius hic recusandae quo quam atque, est explicabo omnis odio in magni accusamus distinctio enim, modi provident dignissimos.</div>
+</body>
+</html>

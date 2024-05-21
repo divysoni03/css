@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar using flex</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: rgb(180, 205, 255);
+    }
+    .main{
+        display: flex;
+        /* border-bottom: 1px solid black; */
+        width: 100%;
+        margin-top: 10px;
+        position: fixed;
+        justify-content: center;
+        background-color: white;
+        border-radius: 20%;
+    }
+    a{
+        text-decoration: none;
+        padding: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 550;
+        color: black;
+        display: block;
+    }
+    a:hover{
+        background-color: rgb(240, 200, 240);
+        color: white;
+        display: block;
+        border-bottom: 1px black;
+        transition: 500ms;
+        border-bottom-style: groove;
+        text-shadow: 1.5px 0px 1px red;
+    }
+    .main .box1 a:hover
+    {
+        background-color: rgb(65, 160, 235);
+        color: white;
+    }
+</style>
+<body>  
+    <div class="main">
+        <div class="box1"><a href="">Home</a></div>
+        <div><a href="">Product</a></div>
+        <div><a href="">About Us</a></div>
+        <div><a href="">Help</a></div>
+    </div>
+</body>
+</html>

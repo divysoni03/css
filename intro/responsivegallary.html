@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive gallery</title>
+</head>
+<style>
+    div.gallery {
+        border: 1px solid black;
+        width: 200px;
+        margin: 5px;
+        float:left;
+    }
+    div.gallery img{
+        width :100%;
+        height: auto;
+    }
+    div.desc{
+        padding: 15px;
+        text-align: center;
+    }
+    div.gallery:hover{
+        border: 3px solid black;
+        transition: 250ms;
+    }
+
+</style>
+<body>
+    <div class="gallery">
+        <a target="_blank" href="/images/captainamerica.jpg">
+            <img src="/images/captainamerica.jpg" alt="">
+        </a>
+        <div class="desc">captain america</div>
+    </div>
+    <div class="gallery">
+        <a href="/images/hulk.jpg">
+            <img src="/images/spiderman.avif" alt="">
+        </a>
+        <div class="desc">hulk</div>
+    </div>
+</body>
+</html>

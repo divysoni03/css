@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>toottip</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+    }
+.tooltip{
+    position: relative;
+    border: 2px black;
+    border-style: dotted;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    background-color: violet;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    margin: 20px;
+    
+}
+
+</style>
+<body>
+    <div class="tooltip">
+        Hover Me
+        <span class="tooltiptext">
+            its tooltip text
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+</head>
+<style>
+    .container{
+        position: relative;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .bcimg{
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+    .topleft{
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    .topright{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    .centerleft{
+        position: absolute;
+        top: 40%;
+        left: 8px;
+    }
+    .center{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+    .centerright{
+        position: absolute;
+        top: 40%;
+        right: 8px;
+    }
+    .bottomleft{
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+    }
+    .bottomright{
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+    }
+</style>
+<body>
+    <div class="container">
+        <img class="bcimg" src="avanger.jpg" alt="">
+        <div class="topleft"><img src="captainamerica.jpg" alt=""></div>
+        <div class="topright"><img src="ironman.jpg" alt=""></div>
+        <div class="centerleft"><img src="hulk.jpg" alt=""></div>
+        <div class="center"><img src="falcon.avif" alt=""></div>
+        <div class="centerright"><img src="thanos.jpeg" alt=""></div>
+        <div class="bottomleft"><img src="blackwidow.avif" alt=""></div>
+        <div class="bottomright"><img src="doctorstrange.avif" alt=""></div>
+    </div>
+</body>
+</html>

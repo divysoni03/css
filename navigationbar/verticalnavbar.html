@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical navigation bar</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: rgb(255, 176, 119);
+    }
+    .list{
+        list-style-type: none;
+        margin: 0; 
+        padding: 0;
+        width: 25%;
+        background-color: rgb(255, 247, 231);
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        /* padding: 8px 16px; */
+    }
+    li a{
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: black;
+        font-size: 19px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    li a:hover{
+        background-color: thistle;
+        color: white;
+        display: block;
+        transition: 350ms;
+    }
+    .maincontent{
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 100%;
+    }
+    h1 ,h2{
+        text-align: end;
+        /* margin-right: 25%; */
+        border-bottom: 3px dashed black;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .images{
+        display: inline-block;
+    }
+</style>
+<body>
+    <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Aboutus">About Us</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="maincontent">
+        <h1>My website</h1>
+        <h2>Made by ~divy</h2>
+     
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur impedit exercitationem dicta consectetur quidem sit assumenda excepturi, eum numquam, ut fugit maiores cum? Dignissimos animi beatae corporis unde, voluptatum incidunt.
+        </p>
+
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam temporibus illum dolores corrupti! Officiis reiciendis tempora, hic quam cupiditate quibusdam natus omnis nihil veritatis adipisci. Ex ducimus sit et ad.</blockquote>
+        
+        <div class="images">
+            <img src="ironman.jpg" alt="">
+            <img src="hulk.jpg" alt="">
+            <img src="captainamerica.jpg" alt="">
+            <img src="spiderman.avif" alt="">
+        </div>
+    
+    </div>
+</body>
+</html>
