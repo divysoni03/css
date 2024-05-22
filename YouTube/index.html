@@ -19,7 +19,7 @@
         width: 15%;
         height: 548px;
         position: fixed;
-        margin: 0;
+        margin-top: 60px;
         display: block;
         padding: 20px;
         overflow-x:hidden;
@@ -57,6 +57,15 @@
         background-color: rgb(191, 191, 191);
         transition: 700ms;
     }
+    .searchbutton{
+        width: 20px;
+        margin-top: 18px;
+        /* margin-left:282px; */
+        border: 2px solid black;
+        padding:6px 12px 6px 6px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
     .searchbar{
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -66,27 +75,34 @@
         margin-left: 70%;
         text-indent: 10px;
     }
-    .searchbutton{
-        width: 20px;
-        margin-top: 18px;
-        margin-left:282px;
-        border: 2px solid black;
-        padding:6px 12px 6px 6px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
+
     .searchbar:hover,.searchbutton:hover{
         background-color: rgb(205, 205, 205);
         transition: 700ms;
     }
+    .hor_nav_bar{
+        display: inline-block;
+        justify-content: space-between;
+        position: fixed;
+    }
+    table{
+        margin: 0;
+        position: fixed;
+        top: -3px;
+    }
     .hor_nav_bar td{
         margin-top: 15px;
-        display: inline-block;
+        /* display: inline-block; */
     }
     .suggetions{
         /* margin:10px 10px 10px 20%; */
         margin-left: 20%;
-        display: inline;
+        margin-top: 50px;
+        display: block;
+        padding: 10px;
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
     }
     .suggetions span{
         margin: 4px;
@@ -110,40 +126,60 @@
     }
     .main_contant{
         margin-left: 20%;
-        margin-top:20px;
-        /* padding: 10px; */
+        margin-top:10px;
+        position:relative;
+        top: 90px;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    .videos{
-        padding: 10px;
+    .videos{ /* shadow behind videos*/
+        padding: 20px;
         border-radius: 12px;
-        width:350px; 
-        height:200px;
-        margin: 10px;
+        width:auto; 
+        height:auto;
+        float: left;
+        /* margin: 10px; */
     }
-    .main_contant:hover{
+    .videos iframe{
+        border-radius: 12px;
+        width:350px;
+        height: 250px;
+
+    }
+    .videos:hover{
         background-color: rgb(191, 191, 191);
         border-radius: 12px;
         transition: 700ms;
     }
-    .main_contant .title{
+    .videos .title{
         font-size: 17px;
     }
-    .main_contant .desc{
+    .videos .desc{
         font-size: 14px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: black;
     }
 </style>
 <body>
     
-    <table>
-        <tr class="hor_nav_bar">
-            <td><span style="margin-top: 13px;" class="material-symbols-outlined">menu</span></td>
-            <td><a href="index.html"><img class="icon" src="youtubeicon1.png" alt=""></a></td>
-            <td><input class="searchbar" placeholder="Search" type="text"></td>
-            <td><a href="#search"><img class="searchbutton" style="width: 20px;margin-top: 18px;margin-left:282px; border: 2px solid black;padding:6px 12px 6px 6px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;" src="search.png" alt=""></a></td>
-            <td><a class="all_icon" href="#creat"><span style="color:black;margin-top: 15px; margin-left: 400px;" class="material-symbols-outlined">add_circle</span></a></td>
-            <td><a class="all_icon" href="#notification"><span style="color: black;margin-top: 15px; margin-left: 20px;" class="material-symbols-outlined">notifications</span></a></td>            
-            <td><a class="all_icon" href="#profile"><span style="color: black;margin-top: 15px;margin-left: 20px;" class="material-symbols-outlined">account_circle</span></a></td>
+    <table style="position: fixed;z-index: 9999;">
+        <tr style="background-color: white;" class="hor_nav_bar">
+            <div>
+                <td style="position: relative;top:-3px;left: 8px;"><span style="margin-top: 13px;" class="material-symbols-outlined">menu</span></td>
+                <td style="position: relative;top:-3px;"><a href="index.html"><img class="icon" src="youtubeicon1.png" alt=""></a></td>
+            </div>
+            <div>
+                <td style="position:relative;left:100px;top: -10px;"><input class="searchbar" placeholder="Search" type="text"></td>
+                <td style="position:relative;left:380px;top:-10px;"><a style="width:20px;height:20px;" href="#search"><img class="searchbutton" src="search.png" alt=""></a></td>
+            </div>
+            <div>
+                <td style="position: relative;left: 300px;top:-5px;"><a style="width: 20px;height: 20px;" class="all_icon" href="#creat"><span style="color:black;margin-top: 15px; margin-left: 400px;" class="material-symbols-outlined">add_circle</span></a></td>
+                <td style="position: relative;left: 300px;top:-5px;"><a style="width: 20px;height: 20px;" class="all_icon" href="#notification"><span style="color: black;margin-top: 15px; margin-left: 20px;" class="material-symbols-outlined">notifications</span></a></td>            
+                <td style="position: relative;left: 300px;top:-5px;"><a style="width: 20px;height: 20px;" class="all_icon" href="#profile"><span style="color: black;margin-top: 15px;margin-left: 20px;" class="material-symbols-outlined">account_circle</span></a></td>
+            </div>
+
         </tr>
     </table>
     <div class="var_navigationbar">
@@ -194,7 +230,7 @@
         <br><br>@ Divy Soni</span></div>
     </div>
 
-    <div class="suggetions">
+    <div style="position: fixed;" class="suggetions">
         <span class="box1"><a href="index.html"></a>All</span>
         <span><a href="#gaming"></a>Gaming</span>
         <span><a href="#Valorant"></a>Valorant</span>
@@ -217,10 +253,51 @@
         <div class="videos">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ovwT6nVVL4M?si=UM1XeBJ55uFaQKT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="title">cats vs dogs | ft.childhood cartoons | hindi story time</div>
-            <a href="#notyourtype"></a>NOT YOUR TYPE
+            <a class="desc" href="#notyourtype">NOT YOUR TYPE</a> <br>
             <span class="desc">8.5M , 2 years ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/tRZGeaHPoaw?si=bJB1lEYpmbZxkvkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">Git and Github tutorial for begineers</div>
+            <a class="desc" href="#kevinstartvert">kevin starvert</a> <br>
+            <span class="desc">1.1M views , 1 year ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/RJ0jdO5ZfU4?si=Evu4ZOjFUWJ9EMrO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">Minecraft speedrun VS 5 hunters</div>
+            <a class="desc" href="#dream">Dream</a> <br>
+            <span class="desc">83M views , 3 year ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/ekQLGA2xHgk?si=UHwTlFKaC2Ptxx67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+            <div class="title">Watch this before you star coding | 10 tips for coders</div>
+            <a class="desc" href="#apnacollege">apna college</a> <br>
+            <span class="desc">1.9M , 1 years ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/8khffUA_O48?si=iKFB5w8XohuKfLT5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+            <div class="title">demon slayer [AMV] edit</div>
+            <a class="desc" href="#xenox">XENOX</a> <br>
+            <span class="desc">11M views , 10 months ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/bYSRPuDEnTg?si=U0VehLc7gn8qf3f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">garmi se side-effects by ashish</div>
+            <a class="desc" href="#ashishchanchlani">Ashish chanchlani</a> <br>
+            <span class="desc">80M views , 6 years ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/6J-jEJ6rl5s?si=W4AqIafaiJC7aLfL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">gotham chess ! gaming time</div>
+            <a class="desc" href="#gotham games">Gotha games</a> <br>
+            <span class="desc">13k views , 7 hours ago</span>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/dLzMz2Jk_qU?si=9t2LgUfPH5DKsjTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">vs code shortcuts that makes you faster</div>
+            <a href="#codercoder" class="desc">Coder Coder</a> <br>
+            <span class="desc">289k views , 5 months ago</span>
         </div>
     </div>
 </body>
 </html>
-
