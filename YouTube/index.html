@@ -11,6 +11,7 @@
     body{
         margin: 0;
         background-color: white;
+        font-family: sans-serif;
     }
 
     .var_navigationbar
@@ -82,6 +83,55 @@
         margin-top: 15px;
         display: inline-block;
     }
+    .suggetions{
+        /* margin:10px 10px 10px 20%; */
+        margin-left: 20%;
+        display: inline;
+    }
+    .suggetions span{
+        margin: 4px;
+        padding: 4px 10px 4px 10px;
+        border: 1px solid white;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-size: 15px;
+        background-color: rgb(220, 220, 220);
+    }
+    .suggetions span:hover{
+        background-color: rgb(191, 191, 191);
+        transition: 700ms;
+        color: black;
+    }
+    .suggetions .box1{
+        background-color: rgb(60, 60, 60);
+        color:white;
+        border:1px solid white;
+        padding: 4px 14px 4px 14px;
+    }
+    .main_contant{
+        margin-left: 20%;
+        margin-top:20px;
+        /* padding: 10px; */
+        display: flex;
+    }
+    .videos{
+        padding: 10px;
+        border-radius: 12px;
+        width:350px; 
+        height:200px;
+        margin: 10px;
+    }
+    .main_contant:hover{
+        background-color: rgb(191, 191, 191);
+        border-radius: 12px;
+        transition: 700ms;
+    }
+    .main_contant .title{
+        font-size: 17px;
+    }
+    .main_contant .desc{
+        font-size: 14px;
+    }
 </style>
 <body>
     
@@ -144,10 +194,33 @@
         <br><br>@ Divy Soni</span></div>
     </div>
 
-    <div class="hor_nav_bar">
-        <span>All</span>
+    <div class="suggetions">
+        <span class="box1"><a href="index.html"></a>All</span>
+        <span><a href="#gaming"></a>Gaming</span>
+        <span><a href="#Valorant"></a>Valorant</span>
+        <span><a href="#datastuctures"></a>Data Structures</span>
+        <span><a href="#news"></a>News</span>
+        <span><a href="#git"></a>Git</span>
+        <span><a href="#sofwareengineering"></a>Software Engineering</span>
+        <span><a href="#music"></a>Music</span>
+        <span><a href="#datascience"></a>Data science</span>
+        <span><a href="#comedy"></a>Comedy</span>
     </div>
 
+    <div class="main_contant">
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/KFnAo83OgnY?si=Fnv2wGb_4noZDgvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">coming back HOME from japan(last day)</div>
+            <a class="desc" href="#shubhuu">shubhuu</a> <br>
+            <span class="desc">822k views , 1 year ago</span>
+        </div>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ovwT6nVVL4M?si=UM1XeBJ55uFaQKT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="title">cats vs dogs | ft.childhood cartoons | hindi story time</div>
+            <a href="#notyourtype"></a>NOT YOUR TYPE
+            <span class="desc">8.5M , 2 years ago</span>
+        </div>
+    </div>
 </body>
 </html>
 
