@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+</head> 
+<style>
+    .box1{
+        width: 200px;
+        height: 200px;
+        border: 4px solid rgb(0, 0, 0) ;
+        background-color: rgba(141, 255, 93, 0.6); 
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        border: 4px solid rgb(13, 255, 102) ;
+        background-color: rgb(189, 26, 189,0.6);
+        position: relative;
+        top: 20px;
+        left: 220px;
+        z-index: 2;
+    }
+    .box3{
+        width: 150px;
+        height: 150px;
+        border: 4px solid rgb(255, 0, 187) ;
+        background-color: rgb(212, 139, 66,0.7);
+        position: relative;
+        top: -160px;
+        left: 40px;
+        z-index: 2;
+    }
+    .box4{
+        width: 200px;
+        height: 200px;
+        border: 4px solid rgb(0, 0, 0) ;
+        background-color: rgb(191, 203, 216,0.7);
+        position: relative;
+        top: -500px;
+        left: 100px;
+        z-index: 1;
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
