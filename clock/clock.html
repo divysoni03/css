@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: rgb(35, 35, 35);
+    }
+    .clock{
+        background-image: url(profile-pic.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 0;
+    }
+    .seconds {
+        width: 70px;
+        height: 200px;
+        /* border-radius: 4px; */
+        /* background-color: black; */
+        background-size: cover;
+        z-index: 1;
+        position: inherit;
+        /* top: 50%; */
+        left: 32%;
+        animation-name: second;
+        animation-duration: 60s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    .hours{
+        width: 100px;
+        height: 150px;
+        /* border-radius: 4px; */
+        /* background-color: black; */
+        position: absolute;
+        top: 35%;
+        left: 41.5%;
+        animation-name: hours;
+        animation-duration: 3600s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+    }
+    @keyframes second{
+        0% {
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes hours{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>  
+    <div class="clock">
+        <img src="secondneedle.png" class="seconds"></div>
+        <img src="secondneedle.png" class="hours"></div>
+    </div>
+</body>
+</html>
