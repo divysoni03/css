@@ -22,26 +22,27 @@
         transform: translate(-50%,-50%);
         z-index: 0;
     }
-    .seconds {
+    /* .seconds {
         width: 70px;
         height: 200px;
         /* border-radius: 4px; */
-        /* background-color: black; */
+        /* background-color: black; 
         background-size: cover;
         z-index: 1;
         position: inherit;
-        /* top: 50%; */
+        /* top: 50%; 
         left: 32%;
         animation-name: second;
         animation-duration: 60s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-    }
+    }*/
+    /*
     .hours{
         width: 100px;
         height: 150px;
         /* border-radius: 4px; */
-        /* background-color: black; */
+        /* background-color: black; 
         position: absolute;
         top: 35%;
         left: 41.5%;
@@ -50,6 +51,29 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         
+    } */
+    .seconds {
+        width: 100px;
+        height: 3px;
+        background-color: black;
+        position: inherit;
+        z-index: 2;
+        top: 50%;
+        animation: second 60s linear infinite;
+        transform-origin: right ;
+    }
+    .hours{
+        width: 50px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: black;
+        position: inherit;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        animation: hours 3600s linear infinite;
+        transform-origin: right;
+
     }
     @keyframes second{
         0% {
@@ -70,8 +94,10 @@
 </style>
 <body>  
     <div class="clock">
-        <img src="secondneedle.png" class="seconds"></div>
-        <img src="secondneedle.png" class="hours"></div>
+        <!-- <img src="secondneedle.png" class="seconds"></div> -->
+        <div class="seconds"></div>
+        <div class="hours"></div>
+        <!-- <img src="secondneedle.png" class="hours"></div> -->
     </div>
 </body>
 </html>
