@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgba(201, 201, 238,.9);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        border: 2px solid black;
+        width: 300px;
+        height: 600px;
+        background-image: url(fullgif.gif);
+        background-size: cover;
+        position: relative;
+    }
+    .box::before {
+        text-align: center;
+        content: "Human Skin Layers (hover to reveal)";
+        position: absolute;
+        background-color: rgb(125, 125, 125);
+        width: 300px;
+        height: 300px;
+        transition: all 1s ease;
+        top: 0;
+    }
+    .box:hover::before{
+        height: 0;
+        content: "";
+    }
+    .box::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(125, 125, 125);
+        width: 300px;
+        height: 300px;
+        transition: all 1s;
+        bottom: 0;
+    }
+    .box:hover::after {
+        height: 0;
+    }
+</style>
+<body>
+    <div class="container"><div class="box"></div></div>
+    
+    
+</body>
+</html>
