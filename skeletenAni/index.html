@@ -7,7 +7,9 @@
 </head>
 <style>
     body {
-        background-color: rgba(201, 201, 238,.9);
+        background-image: url(Clarence.png);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .container {
         display: flex;
@@ -48,10 +50,16 @@
     .box:hover::after {
         height: 0;
     }
+    img {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        transform: rotate(45deg);
+    }
 </style>
 <body>
     <div class="container"><div class="box"></div></div>
-    
+    <img src="dynamic-pacman.png" alt="">
     
 </body>
 </html>
