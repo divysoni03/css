@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiant</title>
+</head>
+<style>
+    h1{
+        color: white;
+        background-color: blue;
+        background-image: linear-gradient(red,blue);
+        text-align: center;
+        height: 40px;
+    }
+    .box1 {
+        width: 300;
+        height: 400px;
+        background-color: blue;
+        background-image: repeating-linear-gradient(to right,red, orange, yellow, green, blue, indigo, violet);
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .box1 span {
+        font-size: 50px;
+        color: white;
+        font-family: sans-serif;
+        box-shadow: 4px 4px white,-4px -4px ;
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+</style>
+<body>
+    <h1>Gradiant</h1>
+    <div class="box1"><span>gradiant</span></div>
+</body>
+</html>

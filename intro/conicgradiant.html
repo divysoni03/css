@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conic gradiant</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .grad1 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-image: conic-gradient(red,green,blue);
+    }
+    .grad2{
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        border-radius: 50%;
+        background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,green 180deg,green 270deg,blue 270deg,blue 360deg);
+    }
+    .grad3 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        border-radius: 50%;
+        background-image: repeating-conic-gradient(thistle 10%,rgb(235, 95, 115) 15%);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="grad1"></div>
+        <div class="grad2"></div>
+        <div class="grad3"></div>
+    </div>
+    
+</body>
+</html>

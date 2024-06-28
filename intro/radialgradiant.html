@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial gradiant</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .grad1 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        background-image: radial-gradient(red,green,blue)
+    }
+    .grad2 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        background-image: radial-gradient(red 10%,green 20%,blue 70%);
+    }
+    .grad3 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        background-image: repeating-radial-gradient(white 10%,black 15%)
+    }
+    .grad4 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        background-image: radial-gradient(thistle,pink,blue);
+    }
+    .grad5 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        background-image: repeating-radial-gradient(thistle 20%,pink 20%,rgb(252, 80, 100) 50%);
+    }
+</style>
+<body>
+    <div class="container">
+       <div class="grad1"></div>
+        <div class="grad2"></div>
+        <div class="grad3"></div>
+        <div class="grad4"></div>
+        <div class="grad5"></div> 
+    </div>
+    
+</body>
+</html>
